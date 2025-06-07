@@ -1,5 +1,5 @@
 # Crossfit
-
+DOCUMENTAÇÃO  NOTION: https://bolder-ice-30c.notion.site/Projeto-An-lise-de-Alunos-de-Crossfit-20a4a17cfd55804496c7ef3e34bd8f48?source=copy_link
 # 📊 Projeto: Análise de Alunos de Crossfit
 
 ### 🔎 Visão Geral
