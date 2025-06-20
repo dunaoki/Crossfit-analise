@@ -89,8 +89,36 @@ Este projeto foi desenvolvido com o objetivo de analisar o comportamento de alun
     - Soma de receita gerada
 - **Tabela de Dados:**
     - Nome dos alunos, frequência, status e perda de peso
+    - Análise Temporal do mês anterior
+
+```markdown
+# calculando o faturamento do mês anterior
+Last Mes = 
+CALCULATE([valor],
+DATEADD(dcalendario[date],-1,MONTH))
+```
+
+```markdown
+# comparando o faturamento atual com o mês anterior
+Last Mes delta= [valor] - [last Mes]
+```
 - **Gráfico de Linhas:**
     - Evolução de planos contratados por ano (Mensal, Semestral, Anual)
+    - - tem um tooltip de análise do mesmo mês do ano anterior
+    
+    ![Captura de Tela 2025-06-20 às 16.51.58.png](attachment:bbf17f4d-a432-436f-8f72-4de0ab0529cd:Captura_de_Tela_2025-06-20_as_16.51.58.png)
+    
+
+```markdown
+#calculando o valor do mesmo mês do ano anterior 
+MoM= 
+CALCULATE([valor] ,SAMEPERIODLASTYEAR(dcalendario[date]))
+```
+
+```markdown
+#calculando a diferença de valor do mês atual com do mesmo mês do ano anterior
+MoM delta = [valor] - [MoM]
+```
 - **Gráfico de Barras Horizontais:**
     - Comparativo entre planos com base no status de matrícula
 
